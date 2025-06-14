@@ -1,0 +1,11 @@
+--- ./sources/libClangSharp/CMakeLists.txt	2025-05-24 04:21:23.000000000 +0200
++++ ./sources/libClangSharp/CMakeLists.txt	2025-06-14 17:21:54.215145736 +0200
+@@ -39,7 +39,7 @@
+ 
+ add_library(ClangSharp SHARED ${SOURCES})
+ 
+-target_link_libraries(ClangSharp PRIVATE clangAST clangFrontend libclang)
++target_link_libraries(ClangSharp PRIVATE clang-cpp)
+ 
+ target_include_directories(ClangSharp PRIVATE ${CLANG_INCLUDE_DIRS})
+ 
